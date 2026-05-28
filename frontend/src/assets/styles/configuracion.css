@@ -1,0 +1,133 @@
+/**
+ * Hoja de Estilos: configuracion.css
+ * 
+ * Define las reglas de presentacion visual, diseno responsivo y micro-interacciones
+ * especificas para este modulo de la aplicacion. Utiliza selectores de clase precisos
+ * y se integra con las variables CSS globales para soportar el cambio de temas 
+ * (Modo Claro / Modo Oscuro) de forma nativa.
+ */
+
+/* Configuración Específico - Soporte para Temas */
+
+.config-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.config-grid {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .config-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.config-sidebar {
+  padding: 1rem;
+  height: fit-content;
+}
+
+.config-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.config-nav-btn {
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  color: var(--text-muted);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.2s;
+}
+
+.config-nav-btn:hover {
+  background: var(--bg-app);
+  color: var(--text-main);
+}
+
+.config-nav-btn.active {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.config-content-box {
+  min-height: 400px;
+}
+
+/* Clases para eliminar estilos inline */
+.config-title-flex {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.config-input-readonly {
+  background: var(--bg-app) !important;
+  color: var(--text-muted) !important;
+}
+
+.config-margin-top-15 {
+  margin-top: 1.5rem;
+}
+
+.config-text-muted {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.config-alert-box {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.config-alert-title {
+  color: #10b981;
+  margin: 0 0 0.5rem 0;
+}
+
+.config-alert-text {
+  margin: 0;
+  color: var(--text-main);
+  font-size: 0.9rem;
+}
+
+.config-margin-bottom-15 {
+  margin-bottom: 1.5rem;
+}
+
+.config-btn-green {
+  background: #10b981;
+  border-color: #10b981;
+  color: white;
+}
+
+.config-btn-green:hover {
+  background: #059669;
+}
+
+.config-monospace {
+  font-family: monospace;
+}

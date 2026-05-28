@@ -1,0 +1,43 @@
+/**
+ * Hoja de Estilos: cajachica.css
+ * 
+ * Define las reglas de presentacion visual, diseno responsivo y micro-interacciones
+ * especificas para este modulo de la aplicacion. Utiliza selectores de clase precisos
+ * y se integra con las variables CSS globales para soportar el cambio de temas 
+ * (Modo Claro / Modo Oscuro) de forma nativa.
+ */
+
+/* Caja Chica Específico - Soporte para Temas */
+
+.caja-badge-ingreso {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.caja-badge-egreso {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.caja-monto-ingreso {
+  font-weight: 900;
+  color: #10b981;
+}
+
+.caja-monto-egreso {
+  font-weight: 900;
+  color: #ef4444;
+}
+
+.caja-description-text {
+  font-weight: 700;
+  color: var(--text-main);
+}

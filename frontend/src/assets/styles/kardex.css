@@ -1,0 +1,75 @@
+/**
+ * Hoja de Estilos: kardex.css
+ * 
+ * Define las reglas de presentacion visual, diseno responsivo y micro-interacciones
+ * especificas para este modulo de la aplicacion. Utiliza selectores de clase precisos
+ * y se integra con las variables CSS globales para soportar el cambio de temas 
+ * (Modo Claro / Modo Oscuro) de forma nativa.
+ */
+
+/* =========================================================
+   KARDEX.CSS — Estilos exclusivos del Kárdex de Inventario
+   ========================================================= */
+
+.kardex-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.form-control {
+  padding: 0.6rem 1rem;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+
+.form-control:focus {
+  border-color: var(--primary);
+  background: var(--surface);
+  box-shadow: 0 0 0 4px rgba(180, 83, 9, 0.15);
+  outline: none;
+}
+
+.loading-box {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-success {
+  background: rgba(5, 150, 105, 0.12);
+  color: #059669;
+}
+
+.badge-danger {
+  background: rgba(220, 38, 38, 0.12);
+  color: #dc2626;
+}
+
+.badge-info {
+  background: rgba(2, 132, 199, 0.12);
+  color: #0284c7;
+}
+
+.badge-warning {
+  background: rgba(217, 119, 6, 0.12);
+  color: #d97706;
+}

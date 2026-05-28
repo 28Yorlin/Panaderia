@@ -1,0 +1,92 @@
+/**
+ * Hoja de Estilos: usuarios.css
+ * 
+ * Define las reglas de presentacion visual, diseno responsivo y micro-interacciones
+ * especificas para este modulo de la aplicacion. Utiliza selectores de clase precisos
+ * y se integra con las variables CSS globales para soportar el cambio de temas 
+ * (Modo Claro / Modo Oscuro) de forma nativa.
+ */
+
+/* Usuarios Específico - Soporte para Temas */
+
+.user-role-badge {
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: inline-flex;
+}
+
+.role-admin { 
+  background: var(--text-main); 
+  color: var(--bg-card); 
+}
+
+.role-panadero { 
+  background: var(--primary); 
+  color: white; 
+}
+
+.role-vendedor { 
+  background: var(--primary-light); 
+  color: white; 
+}
+
+.user-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.dot-active { 
+  background: #10b981; 
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2); 
+}
+
+.dot-inactive { 
+  background: #ef4444; 
+}
+
+.user-username {
+  font-family: monospace;
+  background: var(--bg-app);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: var(--text-main);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Clases para eliminar estilos inline */
+.user-avatar-box {
+  padding: 10px;
+  background: var(--bg-app);
+  border-radius: 50%;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.user-name-text {
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.user-email-text {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.user-status-text {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--text-main);
+}

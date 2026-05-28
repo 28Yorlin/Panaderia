@@ -1,0 +1,61 @@
+/**
+ * Hoja de Estilos: gastos.css
+ * 
+ * Define las reglas de presentacion visual, diseno responsivo y micro-interacciones
+ * especificas para este modulo de la aplicacion. Utiliza selectores de clase precisos
+ * y se integra con las variables CSS globales para soportar el cambio de temas 
+ * (Modo Claro / Modo Oscuro) de forma nativa.
+ */
+
+/* Estilos específicos para la página de Gastos - Soporte para Temas */
+
+.gasto-monto {
+  font-weight: 900;
+  color: #ef4444;
+}
+
+.gasto-descripcion {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.modal-gastos {
+  width: 400px;
+}
+
+.modal-title-gastos {
+  margin: 0;
+  font-weight: 800;
+}
+
+.form-gastos {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-gastos {
+  padding-left: 15px;
+  height: 40px;
+}
+
+.select-gastos {
+  padding-left: 15px;
+  height: 45px;
+}
+
+.btn-submit-gastos {
+  padding: 12px;
+  margin-top: 10px;
+}
+
+/* Clases para eliminar estilos inline */
+.gasto-empty-text {
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.gasto-date-text {
+  color: var(--text-muted);
+}

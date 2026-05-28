@@ -1,0 +1,86 @@
+/**
+ * Hoja de Estilos: insumos.css
+ * 
+ * Define las reglas de presentacion visual, diseno responsivo y micro-interacciones
+ * especificas para este modulo de la aplicacion. Utiliza selectores de clase precisos
+ * y se integra con las variables CSS globales para soportar el cambio de temas 
+ * (Modo Claro / Modo Oscuro) de forma nativa.
+ */
+
+/* Insumos Específico - Soporte para Temas */
+
+.insumo-stock-badge {
+  font-weight: 800;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.stock-ok { 
+  background: rgba(16, 185, 129, 0.1); 
+  color: #10b981; 
+}
+
+.stock-critical { 
+  background: rgba(239, 68, 68, 0.1); 
+  color: #ef4444; 
+  border: 1px solid rgba(239, 68, 68, 0.2); 
+}
+
+.insumo-category {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.insumo-measure {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-left: 4px;
+}
+
+/* Clases para eliminar estilos inline */
+.insumo-icon-box {
+  color: var(--primary);
+  padding: 8px;
+  background: var(--bg-app);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.insumo-name-text {
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.insumo-label-critical {
+  color: #ef4444;
+  font-size: 0.75rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.insumo-label-ok {
+  color: #10b981;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.modal-width-insumos {
+  width: 450px;
+}
+
+.form-grid-2-insumos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}

@@ -1,0 +1,77 @@
+/**
+ * Hoja de Estilos: historial.css
+ * 
+ * Define las reglas de presentacion visual, diseno responsivo y micro-interacciones
+ * especificas para este modulo de la aplicacion. Utiliza selectores de clase precisos
+ * y se integra con las variables CSS globales para soportar el cambio de temas 
+ * (Modo Claro / Modo Oscuro) de forma nativa.
+ */
+
+/* Historial Específico */
+.history-tabs-container {
+  background: #f1f5f9;
+  padding: 5px;
+  border-radius: 12px;
+  display: flex;
+  gap: 5px;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+
+.history-tab-btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+  background: transparent;
+  color: #64748b;
+}
+
+.history-tab-btn.active {
+  background: #0f172a;
+  color: white;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+/* Estilos de Tabla de Historial */
+.history-table-id {
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.history-badge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.badge-success { background: #dcfce7; color: #15803d; }
+.badge-warning { background: #fef3c7; color: #b45309; }
+.badge-danger { background: #fee2e2; color: #ef4444; }
+.badge-info { background: #e0f2fe; color: #0369a1; }
+
+/* Estilos para impresión (Efecto Ticket de Supermercado) */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .printable-ticket, .printable-ticket * {
+    visibility: visible !important;
+  }
+  .printable-ticket {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80mm; /* Ancho estándar de ticketera */
+    background: white;
+    display: block !important; /* Hace que se muestre en la impresión */
+  }
+}

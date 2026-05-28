@@ -1,0 +1,113 @@
+/**
+ * Hoja de Estilos: compras.css
+ * 
+ * Define las reglas de presentacion visual, diseno responsivo y micro-interacciones
+ * especificas para este modulo de la aplicacion. Utiliza selectores de clase precisos
+ * y se integra con las variables CSS globales para soportar el cambio de temas 
+ * (Modo Claro / Modo Oscuro) de forma nativa.
+ */
+
+/* Compras Específico - Soporte para Temas */
+
+.purchase-icon-box {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--primary);
+  background: var(--bg-app);
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 0.3s;
+}
+
+.purchase-name-text {
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  text-align: center;
+}
+
+.purchase-measure-text {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.purchase-cost-text {
+  color: var(--primary);
+  font-weight: 900;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.purchase-stock-text {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 5px;
+  text-align: center;
+}
+
+.cart-provider-selector {
+  padding: 15px;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cart-item-compra {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cart-item-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.cart-item-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+
+.cart-item-remove {
+  background: none;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.cart-item-inputs {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.cart-item-input-box {
+  flex: 1;
+}
+
+.cart-item-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 3px;
+}
+
+.cart-item-subtotal {
+  font-weight: 800;
+  align-self: flex-end;
+  color: var(--text-main);
+  margin-top: 5px;
+}

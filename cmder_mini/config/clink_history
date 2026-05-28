@@ -1,0 +1,88 @@
+|CTAG_1778739404_212837500_24768_0
+|d..
+|d backend
+|pm run dev
+|pm run dev
+|pm run dev
+|pm run dev
+|pm run dev
+|pm run dev
+|d..
+|d frontend
+|pm run dev
+|d..
+|d ml-service
+cd src
+cd models
+|pm run dev
+run model.py
+python random_forest.py
+|d..
+cd ml-service
+.\start.ps1
+|d..
+|d backend
+|pm run dev
+|pm run dev
+|pm run dev
+|pm run dev
+|pm run dev
+|pm run dev
+|pm run dev
+|d..
+|d backend
+|pm run dev
+|d..
+|d frontend
+|pm run dev
+|d..
+|d backend
+|pm run dev
+|pm run dev
+|pm run dev
+|d..
+|d frontend
+npm run devv
+|pm run dev
+|pm run dev
+|d ..
+|d frontend
+|pm run dev
+|d..
+|d backend
+|pm run dev
+|pm run dev
+|pm run dev
+|pm run dev
+|d..
+|d backend
+|pm run dev
+|pm run dev
+|d..
+|d frontend
+|pm run dev
+|d..
+|d backend
+|pm run dev
+|d..
+|d frontend
+|pm run dev
+|d ..
+|d backend
+|pm run dev
+|d..
+|d frontend
+|pm run dev
+cd ..
+|d frontend
+|pm run dev
+|d..
+|d backend
+|pm run dev
+cd..
+cd backend
+|pm run dev
+npm run dev
+cd..
+cd frontend
+npm run dev

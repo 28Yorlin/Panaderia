@@ -1,0 +1,73 @@
+/**
+ * Hoja de Estilos: mermas.css
+ * 
+ * Define las reglas de presentacion visual, diseno responsivo y micro-interacciones
+ * especificas para este modulo de la aplicacion. Utiliza selectores de clase precisos
+ * y se integra con las variables CSS globales para soportar el cambio de temas 
+ * (Modo Claro / Modo Oscuro) de forma nativa.
+ */
+
+/* Mermas Específico - Soporte para Temas */
+
+.merma-loss-card {
+  background: rgba(225, 29, 72, 0.1);
+  border: 1px solid rgba(225, 29, 72, 0.2);
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.merma-loss-value {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #e11d4e;
+}
+
+.merma-reason-tag {
+  background: var(--bg-app);
+  color: var(--text-main);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.merma-product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.merma-product-name {
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.merma-date {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Clases para eliminar estilos inline */
+.merma-table-date {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.merma-product-id {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.merma-header-btn {
+  background: #e11d4e;
+  color: white;
+}
+
+.merma-header-btn:hover {
+  background: #be123c;
+}

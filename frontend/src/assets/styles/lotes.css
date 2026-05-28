@@ -1,0 +1,77 @@
+/**
+ * Hoja de Estilos: lotes.css
+ * 
+ * Define las reglas de presentacion visual, diseno responsivo y micro-interacciones
+ * especificas para este modulo de la aplicacion. Utiliza selectores de clase precisos
+ * y se integra con las variables CSS globales para soportar el cambio de temas 
+ * (Modo Claro / Modo Oscuro) de forma nativa.
+ */
+
+/* =========================================================
+   LOTES.CSS — Estilos exclusivos del módulo de Lotes
+   ========================================================= */
+
+.lote-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.lote-badge.activo {
+  background: rgba(5, 150, 105, 0.12);
+  color: #059669;
+}
+
+.lote-badge.vencido {
+  background: rgba(220, 38, 38, 0.12);
+  color: #dc2626;
+}
+
+.lote-badge.por-vencer {
+  background: rgba(217, 119, 6, 0.12);
+  color: #d97706;
+}
+
+.lote-actions-div {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.lote-modal-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+}
+
+.lote-modal-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.lote-label-mini {
+  font-size: 0.8rem;
+  color: #475569;
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.form-grid-2-lotes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 600px) {
+  .form-grid-2-lotes {
+    grid-template-columns: 1fr;
+  }
+}

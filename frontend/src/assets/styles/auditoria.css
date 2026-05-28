@@ -1,0 +1,74 @@
+/**
+ * Hoja de Estilos: auditoria.css
+ * 
+ * Define las reglas de presentacion visual, diseno responsivo y micro-interacciones
+ * especificas para este modulo de la aplicacion. Utiliza selectores de clase precisos
+ * y se integra con las variables CSS globales para soportar el cambio de temas 
+ * (Modo Claro / Modo Oscuro) de forma nativa.
+ */
+
+/* =========================================================
+   AUDITORIA.CSS — Estilos exclusivos de Auditoría
+   ========================================================= */
+
+.user-name-text {
+  font-weight: 600;
+  color: var(--brand-600);
+  font-size: 0.85rem;
+}
+
+.history-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.history-badge.badge-INSERT,
+.history-badge.badge-success {
+  background: rgba(5, 150, 105, 0.12);
+  color: #059669;
+}
+
+.history-badge.badge-UPDATE,
+.history-badge.badge-warning {
+  background: rgba(217, 119, 6, 0.12);
+  color: #d97706;
+}
+
+.history-badge.badge-DELETE,
+.history-badge.badge-danger {
+  background: rgba(220, 38, 38, 0.12);
+  color: #dc2626;
+}
+
+.history-badge.badge-LOGIN,
+.history-badge.badge-info {
+  background: rgba(2, 132, 199, 0.12);
+  color: #0284c7;
+}
+
+.audit-detail-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.audit-detail-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.audit-detail-value {
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  word-break: break-word;
+}

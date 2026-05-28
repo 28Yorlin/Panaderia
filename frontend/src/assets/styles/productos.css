@@ -1,0 +1,188 @@
+/**
+ * Hoja de Estilos: productos.css
+ * 
+ * Define las reglas de presentacion visual, diseno responsivo y micro-interacciones
+ * especificas para este modulo de la aplicacion. Utiliza selectores de clase precisos
+ * y se integra con las variables CSS globales para soportar el cambio de temas 
+ * (Modo Claro / Modo Oscuro) de forma nativa.
+ */
+
+/* Productos Específico - Soporte para Temas */
+
+.product-grid-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-status-active {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.product-status-inactive {
+  background: #fee2e2;
+  color: #ef4444;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.product-price-tag {
+  font-weight: 900;
+  color: var(--text-main);
+}
+
+.product-stock-alert {
+  color: #ef4444;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* Clases para eliminar estilos inline */
+.product-icon-box {
+  padding: 8px;
+  background: var(--bg-app);
+  border-radius: 8px;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.product-name-text {
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.product-desc-text {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.product-actions-div {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-action-green {
+  background: #10b981 !important;
+  color: white !important;
+}
+
+.btn-action-green:hover {
+  background: #059669 !important;
+}
+
+.modal-width-medium {
+  width: 500px;
+}
+
+.modal-width-small {
+  width: 450px;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.input-select-modern {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-main);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-select-modern:focus {
+  border-color: var(--primary);
+}
+
+.product-text-right {
+  text-align: right;
+}
+
+.product-text-center {
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.product-flex-center {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-modal-title {
+  margin: 0;
+  font-weight: 800;
+}
+
+.product-modal-body {
+  padding: 24px;
+}
+
+.product-flex-gap-10 {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.product-flex-2 {
+  flex: 2;
+}
+
+.product-flex-1 {
+  flex: 1;
+}
+
+.product-padding-btn {
+  padding: 0 15px;
+}
+
+.product-scroll-table {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+.product-font-small {
+  font-size: 0.9rem;
+}
+
+.product-padding-mini-btn {
+  padding: 5px 8px;
+}
+
+.product-full-width-btn {
+  width: 100%;
+  padding: 12px;
+}
+
+.product-label-mini {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.product-input-standard {
+  padding-left: 10px;
+  height: 40px;
+}
+
+.product-btn-submit {
+  padding: 12px;
+  margin-top: 10px;
+}

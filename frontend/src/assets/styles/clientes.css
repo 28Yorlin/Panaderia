@@ -1,0 +1,132 @@
+/**
+ * Hoja de Estilos: clientes.css
+ * 
+ * Define las reglas de presentacion visual, diseno responsivo y micro-interacciones
+ * especificas para este modulo de la aplicacion. Utiliza selectores de clase precisos
+ * y se integra con las variables CSS globales para soportar el cambio de temas 
+ * (Modo Claro / Modo Oscuro) de forma nativa.
+ */
+
+/* Clientes Específico - Soporte para Temas */
+
+.client-avatar {
+  width: 36px;
+  height: 36px;
+  background: var(--bg-app);
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.8rem;
+  border: 1px solid var(--border-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.client-info-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.client-name {
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.client-id-text {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.client-phone-badge {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+}
+
+.client-direction-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.client-actions-div {
+  display: flex;
+  gap: 8px;
+}
+
+.modal-width-clientes {
+  width: 550px;
+}
+
+.form-grid-2-clientes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* Clases para eliminar estilos inline */
+.client-flex-center {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.client-font-small {
+  font-size: 0.7rem;
+}
+
+.client-text-center {
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.client-modal-title {
+  margin: 0;
+  font-weight: 800;
+}
+
+.client-modal-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.client-label-mini {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.client-value-bold {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.client-flex-end {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.client-btn-muted {
+  background: var(--text-muted);
+}
+
+.client-input-standard {
+  padding-left: 10px;
+  height: 40px;
+}
+
+.client-btn-submit-custom {
+  width: auto;
+  padding: 0 20px;
+}

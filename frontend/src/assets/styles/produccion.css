@@ -1,0 +1,129 @@
+/**
+ * Hoja de Estilos: produccion.css
+ * 
+ * Define las reglas de presentacion visual, diseno responsivo y micro-interacciones
+ * especificas para este modulo de la aplicacion. Utiliza selectores de clase precisos
+ * y se integra con las variables CSS globales para soportar el cambio de temas 
+ * (Modo Claro / Modo Oscuro) de forma nativa.
+ */
+
+/* Producción Específica - Soporte para Temas */
+
+.production-workflow {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.production-calendar-bar {
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.task-card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 24px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s, border-color 0.3s;
+}
+
+.task-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.task-card.completed {
+  border-left: 5px solid #10b981;
+}
+
+.task-card.pending {
+  border-left: 5px solid #f59e0b;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.task-product-name {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.task-quantity {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--text-main);
+}
+
+.btn-finish-task {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.btn-finish-task:hover {
+  background: var(--primary-hover);
+  transform: scale(1.02);
+}
+
+/* Clases para eliminar estilos inline */
+.production-title {
+  margin: 0;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.production-sub {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.calendar-input {
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  font-weight: 700;
+  background: var(--bg-app);
+  color: var(--text-main);
+}
+
+.empty-state-production {
+  grid-column: 1/-1;
+  text-align: center;
+  padding: 4rem;
+  background: var(--bg-card);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+}

@@ -1,0 +1,112 @@
+/**
+ * Hoja de Estilos: roles.css
+ * 
+ * Define las reglas de presentacion visual, diseno responsivo y micro-interacciones
+ * especificas para este modulo de la aplicacion. Utiliza selectores de clase precisos
+ * y se integra con las variables CSS globales para soportar el cambio de temas 
+ * (Modo Claro / Modo Oscuro) de forma nativa.
+ */
+
+/* =========================================================
+   ROLES.CSS — Estilos exclusivos del módulo de Roles
+   ========================================================= */
+
+.rol-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--brand-700), var(--brand-500));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.rol-flex-center {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rol-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.875rem;
+}
+
+.rol-id-text {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.rol-info-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.rol-permisos-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.rol-permiso-badge {
+  background: rgba(180, 83, 9, 0.1);
+  color: var(--brand-700);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.rol-actions-div {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.rol-modal-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+}
+
+.rol-modal-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rol-label-mini {
+  font-size: 0.8rem;
+  color: #475569;
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.rol-checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.rol-checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.rol-checkbox-item input[type="checkbox"] {
+  accent-color: var(--brand-500);
+  width: 16px;
+  height: 16px;
+}

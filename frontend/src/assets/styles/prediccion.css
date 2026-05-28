@@ -1,0 +1,212 @@
+/**
+ * Hoja de Estilos: prediccion.css
+ * 
+ * Define las reglas de presentacion visual, diseno responsivo y micro-interacciones
+ * especificas para este modulo de la aplicacion. Utiliza selectores de clase precisos
+ * y se integra con las variables CSS globales para soportar el cambio de temas 
+ * (Modo Claro / Modo Oscuro) de forma nativa.
+ */
+
+/* =========================================================
+   PREMIUM PREDICCIÓN STYLES
+   ========================================================= */
+
+.prediccion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Header de la página */
+.prediccion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.prediccion-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.date-picker-wrapper {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: var(--card-shadow);
+}
+
+.date-picker-wrapper input {
+  border: none;
+  outline: none;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  background: transparent;
+}
+
+.btn-procesar-ia {
+  background: var(--brand-600);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(99, 102, 241, 0.2);
+}
+
+.btn-procesar-ia:hover {
+  background: var(--brand-700);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(99, 102, 241, 0.3);
+}
+
+/* KPIs de la imagen */
+.prediccion-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.prediccion-kpi-card {
+  background: var(--surface);
+  padding: 20px 24px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.2s ease;
+}
+
+.prediccion-kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.kpi-title-ref {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.kpi-value-ref {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.025em;
+}
+
+/* Contenedor Principal (Gráfico + Sidebar) */
+.prediccion-main-layout {
+  display: grid;
+  grid-template-columns: 1fr 600px;
+  gap: 20px;
+}
+
+.prediccion-tables-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .prediccion-main-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .prediccion-tables-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tarjeta Recomendación (Fondo Crema -> Ahora Indigo Light) */
+.card-recomendacion-ref {
+  background: var(--brand-50);
+  border: 1px solid var(--brand-200);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card-historial-ref {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.historial-row-ref {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.historial-row-ref:last-child {
+  border-bottom: none;
+}
+
+/* Estilos de Paginación para Predicción */
+.pagination-container-ai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.btn-page-ai {
+  background: var(--bg-app);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.8rem;
+}
+
+.btn-page-ai:hover:not(:disabled) {
+  background: var(--brand-600);
+  color: white;
+  border-color: var(--brand-600);
+}
+
+.btn-page-ai:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.page-info-ai {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}

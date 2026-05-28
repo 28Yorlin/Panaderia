@@ -1,0 +1,80 @@
+/**
+ * Hoja de Estilos: stock.css
+ * 
+ * Define las reglas de presentacion visual, diseno responsivo y micro-interacciones
+ * especificas para este modulo de la aplicacion. Utiliza selectores de clase precisos
+ * y se integra con las variables CSS globales para soportar el cambio de temas 
+ * (Modo Claro / Modo Oscuro) de forma nativa.
+ */
+
+/* =========================================================
+   STOCK.CSS — Estilos exclusivos del módulo de Stock
+   ========================================================= */
+
+.stock-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.stock-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--card-shadow);
+  padding: 18px;
+  transition: all 0.3s;
+}
+
+.stock-card:hover {
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-2px);
+}
+
+.stock-card-name {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.stock-card-qty {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.stock-card-qty.ok      { color: #059669; }
+.stock-card-qty.low     { color: #d97706; }
+.stock-card-qty.critical{ color: #dc2626; }
+
+.stock-card-unit {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.stock-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.stock-status-badge.ok {
+  background: rgba(5, 150, 105, 0.12);
+  color: #059669;
+}
+
+.stock-status-badge.low {
+  background: rgba(217, 119, 6, 0.12);
+  color: #d97706;
+}
+
+.stock-status-badge.critical {
+  background: rgba(220, 38, 38, 0.12);
+  color: #dc2626;
+}
