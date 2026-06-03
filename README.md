@@ -1,4 +1,9 @@
-# 🥖 Panadería - Sistema de Predicción de Demanda
+# Credenciales para iniciar secion 
+usuario: admin
+contraseña: admin123
+
+
+#  Panadería - Sistema de Predicción de Demanda
 
 Este es un sistema integral para una panadería que incluye un backend en Node.js, un frontend moderno en React y un servicio de Inteligencia Artificial en Python (Random Forest) para predecir la demanda de los productos.
 
@@ -12,7 +17,7 @@ Este es un sistema integral para una panadería que incluye un backend en Node.j
 
 ---
 
-## 📂 Estructura del Proyecto
+##  Estructura del Proyecto
 
 El proyecto está dividido en tres partes principales:
 - `/frontend`: Interfaz de usuario interactiva (Dashboard).
@@ -21,7 +26,7 @@ El proyecto está dividido en tres partes principales:
 
 ---
 
-## 🚀 Cómo instalar y ejecutar el proyecto
+##  Cómo instalar y ejecutar el proyecto
 
 Para ejecutar este proyecto en tu computadora localmente, sigue estas instrucciones paso a paso:
 
@@ -56,8 +61,6 @@ npm run dev
 
 ### 5. Iniciar el Servicio de IA (Python)
 
-> ⚠️ **Nota importante sobre el modelo predictivo:** 
-> Por restricciones de tamaño en GitHub, el archivo del modelo entrenado (`modelo_panaderia.pkl`) no se incluye en el repositorio. Necesitas entrenarlo en tu máquina local la primera vez.
 
 Abre una tercera terminal y ejecuta:
 ```bash
@@ -81,4 +84,4 @@ uvicorn src.api.main:app --host 0.0.0.0 --port 8000 --reload
 
 ---
 
-¡Y listo! Con las 3 terminales corriendo simultáneamente (Frontend, Backend y ML-Service) tendrás el sistema funcionando al 100%.
+
